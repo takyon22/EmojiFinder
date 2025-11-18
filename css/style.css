@@ -25,6 +25,7 @@ body{
 
 .search{
   width: 650px;
+  height: 30px;
   display: flex; /* Fattar inte riktigt detta men de funkar */
   background-color: #4D5157;
   margin-top: 30px; /* Avstånd mellan sökruta och looga */
@@ -39,13 +40,29 @@ body{
 }
 .andraikoner{
   display: flex;
-  gap: 15px; /* Avstånd mellan de 2 ikonerna */
+  gap: 10px; /* Avstånd mellan ikonerna */
+  align-items: center;
 }
 #kb{
   height: 25px;
   width: 25px;
 }
 
+.ai{
+  height: 32px;
+  display: flex;
+  gap: 5px;
+  border: #aaaaaa 1px solid;
+  border-radius: 30px;
+  font-size: 14px;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+#ai{
+  width: 15px;
+  height: 15px;
+}
 .buttons{
   display: flex;
   justify-content: center;
