@@ -19,11 +19,13 @@ body{
   margin-left: auto;
   margin-right: auto;
   width: 250px;
-  transition: 1s;
+  transition: .5s;
+  animation: spin 3s linear infinite;
 }
 #logo:hover{
-  width: 350px;
-  transition: 1s;
+  width: 300px;
+  transition: .5s;
+
 }
 
 .search{
@@ -125,6 +127,7 @@ input:focus{
   border-radius: 7px;
   text-align: center;
   transition: .5s;
+
 }
 #button2:hover{
   width: 95px;
@@ -139,4 +142,13 @@ input:focus{
 }
 p{
   color: white;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
