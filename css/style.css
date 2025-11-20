@@ -20,7 +20,7 @@ body{
   margin-right: auto;
   width: 250px;
   transition: .5s;
-  animation: spin 3s linear infinite;
+  animation: spin 10s linear infinite;
 }
 #logo:hover{
   width: 300px;
@@ -33,7 +33,7 @@ body{
   height: 30px;
   display: flex; /* Fattar inte riktigt detta men de funkar */
   background-color: #4D5157;
-  margin-top: 30px; /* Avstånd mellan sökruta och looga */
+  margin-top: 100px; /* Avstånd mellan sökruta och looga */
   padding: 12px; /* Hur mycke luft de e mellan kanterna och ikoner */
   border-radius: 30px; /* Runda kanter */
   align-items: center;
