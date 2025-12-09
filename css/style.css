@@ -33,12 +33,13 @@ body{
   padding: 12px; /* Hur mycke luft de e mellan kanterna och ikoner */
   border-radius: 30px; /* Runda kanter */
   align-items: center;
-  transition: .4s;
+  transition: .3s;
 }
 .search:hover{
-  width: 30%;
-  transition: .4s;
+  width: 27%;
+  transition: .3s;
 }
+
 #search{
   height: 20px;
   width: 20px;
@@ -76,12 +77,12 @@ input:focus{
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
-  transition: .3s;
+  transition: .2s;
 }
 #button1:hover{
   width: 75px;
   background-color: #4b6a2c;
-  transition: .3s;
+  transition: .2s;
   padding: 10px;
   border-radius: 7px;
   padding-left: 20px;
@@ -92,7 +93,7 @@ input:focus{
 #button1:active{
   width: 70px;
   background-color: #627c48;
-  transition: .2s;
+  transition: .1s;
   padding: 10px;
   border-radius: 7px;
   padding-left: 20px;
@@ -108,12 +109,12 @@ input:focus{
   padding-right: 20px;
   border-radius: 7px;
   text-align: center;
-  transition: .3s;
+  transition: .2s;
 }
 #button2:hover{
   width: 90px;
   background-color: #4d6ba5;
-  transition: .3s;
+  transition: .2s;
   padding: 10px;
   border-radius: 7px;
   padding-left: 20px;
@@ -124,7 +125,7 @@ input:focus{
 #button2:active{
   width: 85px;
   background-color: #7d8ba8;
-  transition: .2s;
+  transition: .1s;
   padding: 10px;
   border-radius: 7px;
   padding-left: 20px;
@@ -139,12 +140,12 @@ input:focus{
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding: 10%;
-  gap: 5%;
+  padding: 5%;
 }
 #output p{
   font-size: 16px;
   color: #9a9a9a;
+  font-weight: bold;
 }
 
 .emoji{
@@ -153,7 +154,7 @@ input:focus{
 }
 
 .emoji:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   cursor: pointer;
   filter: drop-shadow(0 5px 15px rgb(0, 0, 0));
   transition: 0.3s;
@@ -178,14 +179,24 @@ input:focus{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 100px;
+  opacity: 0;               /* startar osynlig */
+  transform: scale(0.8);    /* startar lite mindre */
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
+.emojis.show {
+  opacity: 1;               /* slutar på fullt synlig */
+  transform: scale(1);      /* slutar på normal storlek */
+}
+
 
 #alert{
   position: fixed;      /* ovanpå sidan */
-  bottom: 50%;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   color: #7cc867;
-  font-weight: bold;
   font-size: 24px;
+  filter: drop-shadow(0 5px 15px rgb(0, 0, 0));
+  text-align: center;
 }
