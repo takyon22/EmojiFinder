@@ -2,6 +2,7 @@ const button1 = document.getElementById('button1');
 const button2 = document.getElementById('button2');
 const input = document.getElementById('input');
 const output = document.getElementById('output');
+const alert = document.getElementById('alert');
 
 async function emojiSearch() {
   const query = input.value.trim();
@@ -10,13 +11,13 @@ async function emojiSearch() {
   const res = await fetch(`https://emojihub.yurace.pro/api/similar/${query}`); //Söker API med användarens input
   const data = await res.json();
 
-  output.innerHTML = ""; // rensa
+  output.innerHTML = ""; // Rensa
 
   if (!data.length) {
     output.innerHTML = "<p>Inga resultat... 😔<p>";
     return;
   }
-  // Om inga träffar
+  // Om inga träffar ^
 
   data.forEach(item => {
 
@@ -26,7 +27,17 @@ async function emojiSearch() {
     div.innerHTML = `
       <div class="emoji">${item.htmlCode}</div>
     `;
-    // Loopar igenom allt i array och levererar alla items i en div.
+    // Loopar igenom allt i array och levererar items i en div.
+
+    div.querySelector('.emoji').addEventListener('click', (e) => {
+      navigator.clipboard.writeText(e.target.textContent)
+
+      const temp = document.createElement('span');
+      temp.textContent = 'Kopierad!';
+      alert.appendChild(temp);
+
+      setTimeout(() => alert.removeChild(temp), 1000); // tar bort efter 2s
+    });
 
     output.appendChild(div);
   });

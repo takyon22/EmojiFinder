@@ -130,11 +130,28 @@ input:focus{
 }
 #output p{
   font-size: 20px;
-  color: #D6D6D6;
+  color: #b6b6b6;
 }
 
 .emoji{
   font-size: 75px;
+}
+
+.emoji:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  filter: drop-shadow(0 5px 15px rgb(0, 0, 0));
+  transition: 0.2s;
+  border: none;
+  outline: none;
+}
+
+.emoji:active {
+  filter: drop-shadow(0 5px 10px rgb(162, 202, 255));
+  transform: scale(0.99);
+  transition: 0.1s;
+  border: none;
+  outline: none;
 }
 
 .name{
@@ -147,4 +164,8 @@ input:focus{
   justify-content: center;
   align-items: center;
   column-gap: 5%;
+}
+
+#alert{
+  margin-top: 20px;
 }
