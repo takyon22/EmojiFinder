@@ -18,22 +18,21 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 250px;
-  transition: .5s;
-  animation: spin 10s linear infinite;
+  width: 350px;
+  transition: .3s;
 }
 #logo:hover{
-  width: 300px;
-  transition: .5s;
+  width: 400px;
+  transition: .3s;
 
 }
 
 .search{
-  width: 50%;
+  width: 25%;
   height: 30px;
   display: flex; /* Fattar inte riktigt detta men de funkar */
   background-color: #4D5157;
-  margin-top: 100px; /* Avstånd mellan sökruta och looga */
+  margin-top: 50px; /* Avstånd mellan sökruta och looga */
   padding: 12px; /* Hur mycke luft de e mellan kanterna och ikoner */
   border-radius: 30px; /* Runda kanter */
   align-items: center;
@@ -41,7 +40,7 @@ body{
   transition: .5s;
 }
 .search:hover{
-  width: 60%;
+  width: 30%;
   transition: .5s;
 }
 #search{
@@ -58,7 +57,7 @@ input{
   display: flex;
   height: 100%;
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
   outline: none;
 }
 input:focus{
@@ -98,47 +97,49 @@ input:focus{
 }
 
 #button1{
-  width: 100px;
-  background-color: #303134;
-  padding: 10px;
-  border-radius: 7px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  transition: .5s;
-}
-#button1:hover{
-  width: 120px;
-  background-color: #4b6a2c;
-  font-weight: bold;
-  transition: .5s;
-  padding: 10px;
-  border-radius: 7px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-}
-#button2{
   width: 75px;
   background-color: #303134;
   padding: 10px;
+  border-radius: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  transition: .3s;
+}
+#button1:hover{
+  width: 85px;
+  background-color: #4b6a2c;
+  font-weight: bold;
+  transition: .3s;
+  padding: 10px;
+  border-radius: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+#button2{
+  width: 90px;
+  background-color: #303134;
+  padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 7px;
   text-align: center;
-  transition: .5s;
+  transition: .3s;
 
 }
 #button2:hover{
   width: 95px;
-  background-color: #4b6a2c;
+  background-color: #4d6ba5;
   font-weight: bold;
-  transition: .5s;
+  transition: .3s;
   padding: 10px;
   border-radius: 7px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
+  cursor: pointer;
 }
 p{
   color: white;
