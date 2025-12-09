@@ -22,11 +22,7 @@ body{
   width: 25%;
   transition: .3s;
 }
-#logo:hover{ /* Hover enlarge effekt */
-  width: 27%;
-  transition: .3s;
 
-}
 
 .search{
   width: 25%;
@@ -37,12 +33,11 @@ body{
   padding: 12px; /* Hur mycke luft de e mellan kanterna och ikoner */
   border-radius: 30px; /* Runda kanter */
   align-items: center;
-  justify-content: space-between;
-  transition: .5s;
+  transition: .4s;
 }
 .search:hover{
-  width: 27%;
-  transition: .3s;
+  width: 30%;
+  transition: .4s;
 }
 #search{
   height: 20px;
@@ -84,10 +79,20 @@ input:focus{
   transition: .3s;
 }
 #button1:hover{
-  width: 85px;
+  width: 75px;
   background-color: #4b6a2c;
-  font-weight: bold;
   transition: .3s;
+  padding: 10px;
+  border-radius: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+#button1:active{
+  width: 70px;
+  background-color: #627c48;
+  transition: .2s;
   padding: 10px;
   border-radius: 7px;
   padding-left: 20px;
@@ -104,13 +109,22 @@ input:focus{
   border-radius: 7px;
   text-align: center;
   transition: .3s;
-
 }
 #button2:hover{
-  width: 95px;
+  width: 90px;
   background-color: #4d6ba5;
-  font-weight: bold;
   transition: .3s;
+  padding: 10px;
+  border-radius: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+#button2:active{
+  width: 85px;
+  background-color: #7d8ba8;
+  transition: .2s;
   padding: 10px;
   border-radius: 7px;
   padding-left: 20px;
@@ -126,28 +140,29 @@ input:focus{
   align-items: center;
   flex-direction: row;
   padding: 10%;
-  column-gap: 5%;
+  gap: 5%;
 }
 #output p{
-  font-size: 20px;
-  color: #b6b6b6;
+  font-size: 16px;
+  color: #9a9a9a;
 }
 
 .emoji{
   font-size: 75px;
+  transition: 0.3s;
 }
 
 .emoji:hover {
   transform: scale(1.05);
   cursor: pointer;
   filter: drop-shadow(0 5px 15px rgb(0, 0, 0));
-  transition: 0.2s;
+  transition: 0.3s;
   border: none;
   outline: none;
 }
 
 .emoji:active {
-  filter: drop-shadow(0 5px 10px rgb(162, 202, 255));
+  filter: drop-shadow(0 5px 10px #7cc867);
   transform: scale(0.99);
   transition: 0.1s;
   border: none;
@@ -163,9 +178,14 @@ input:focus{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  column-gap: 5%;
 }
 
 #alert{
-  margin-top: 20px;
+  position: fixed;      /* ovanpå sidan */
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #7cc867;
+  font-weight: bold;
+  font-size: 24px;
 }

@@ -54,6 +54,17 @@ async function randomSearch() {
     <div class="emoji">${data.htmlCode[0]}</div>
   `
   // Hämtar enbart första koden från htmlCode Array '[0]' eftersom det är random
+
+  output.querySelector('.emoji').addEventListener('click', (e) => {
+    navigator.clipboard.writeText(e.target.textContent)
+
+    const temp = document.createElement('span');
+    temp.textContent = 'Kopierad!';
+    alert.appendChild(temp);
+
+    setTimeout(() => alert.removeChild(temp), 1000); // tar bort efter 2s
+  });
+
 }
 
 button1.addEventListener('click', emojiSearch); //Kör function emojiSearch vid knapptryck
