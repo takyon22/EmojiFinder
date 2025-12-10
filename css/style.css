@@ -138,7 +138,7 @@ input:focus{
   align-items: center;
   flex-direction: row;
   padding: 5%; /* Padding mellan genererade emojis och sök delen av sidan */
-  gap: 2%; /* Avstånd mellan olika emojis */
+  gap: 3%; /* Avstånd mellan olika emojis */
 }
 #output p{ /*Styling för placeholder texten innan emoji sök */
   color: #9a9a9a;
