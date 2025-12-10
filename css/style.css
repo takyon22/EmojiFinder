@@ -19,7 +19,6 @@ body{
   margin-left: auto;
   margin-right: auto;
   width: 25%;
-  transition: .3s;
 }
 
 .search{
@@ -61,8 +60,11 @@ input:focus{
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 15px; /* Avstånd mellan knappar och sökrutan */
+  margin-top: 25px; /* Avstånd mellan knappar och sökrutan */
   font-size: 14px; /* Aningen mindre font size för knapparna */
+}
+.buttons span{
+  user-select: none; /* Undviker att text i knappar blir markerad */
 }
 
 /* CSS för knappar med animering av storlek vid tryck samt färgändring vid hover */
@@ -148,11 +150,12 @@ input:focus{
 .emoji{
   font-size: 75px; /* Storlek på emoji. Lyckades inte göra dem skalbara med % */
   transition: 0.3s;
+  user-select: none; /* Undviker att emoji-texten blir markerad vid tryck */
 }
 /* Hover och klick effekt för mer interaktiv känsla */
 .emoji:hover {
   transform: scale(1.1);
-  cursor: pointer;
+  cursor: pointer; /* Cursor ser klickbar ut */
   filter: drop-shadow(0 5px 15px rgb(0, 0, 0));
   transition: 0.3s;
   border: none;
