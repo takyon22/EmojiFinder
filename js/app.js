@@ -11,7 +11,8 @@ async function emojiSearch() {
   const query = input.value.trim();
   if (!query) return;
 
-  const res = await fetch(`https://emojihub.yurace.pro/api/similar/${query}`); //Söker API med användarens input (query)
+  const res = await fetch(`https://emojihub.yurace.pro/api/similar/${query}`);
+  //Söker API med användarens input (query)
   const data = await res.json();
 
   output.innerHTML = ""; // Rensa tidigare sökning
@@ -35,7 +36,7 @@ async function emojiSearch() {
 
     div.querySelector('.emoji').addEventListener('click', (e) => {
       navigator.clipboard.writeText(e.target.textContent)
-    //kopierar den klickade emojin till clipboard. här funkar det inte att låta användaren kopiera själva htmlkoden
+    //kopierar den klickade emojin till clipboard. här funkar det inte att låta användaren kopiera själva html-koden från API
     //då klistras bara själva koden in, inte emojin. textContent fungerar korrekt.
 
       const temp = document.createElement('span');
