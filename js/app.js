@@ -58,7 +58,7 @@ async function randomSearch() {
   output.innerHTML = '';
 
   output.innerHTML = `
-    <div class="emoji">${data.htmlCode}</div>
+    <div class="emoji">${data.htmlCode.join('')}</div>
   `;
 
   output.querySelector('.emoji').addEventListener('click', (e) => {
