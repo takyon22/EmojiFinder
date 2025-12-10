@@ -28,11 +28,10 @@ async function emojiSearch() {
     const div = document.createElement("div");
 
     div.innerHTML = `
-      <div class="emoji">${item.htmlCode[0]}</div>
+      <div class="emoji">${item.htmlCode.join('')}</div>
     `;
     // loopar igenom allt i array och levererar emojis i enstaka separata div.
-    // hämtar enbart första koden från htmlCode Array '[0]' för att undvika konstiga emojis
-    // hudfärgs emojis renderas inte korrekt på sidan så om jag skriver [0] så visas bara själva emojin.
+    // Jag löste att emojis inte visas korrekt genom att använda join för att sammanlänka alla html koder i array!! YESS
 
     div.querySelector('.emoji').addEventListener('click', (e) => {
       navigator.clipboard.writeText(e.target.textContent)

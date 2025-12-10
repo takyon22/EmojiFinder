@@ -151,6 +151,7 @@ input:focus{
   font-size: 75px; /* Storlek på emoji. Lyckades inte göra dem skalbara med % */
   transition: 0.3s;
   user-select: none; /* Undviker att emoji-texten blir markerad vid tryck */
+  font-variant-emoji: unicode;
 }
 /* Hover och klick effekt för mer interaktiv känsla */
 .emoji:hover {
