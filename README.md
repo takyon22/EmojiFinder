@@ -6,5 +6,6 @@ Sidan är baserad på den allra första uppgiften du gav oss, alltså att åters
 
 Det fanns en hel del mer saker jag ville göra men som jag undvek att ge mig in på pga min limited kunskap i JS. Inte speciellt tillfredsställande att låta en robot göra absolut allt.
 Tog lite hjälp av AI för små frågor men jag hoppas att mina kommentarer i koden är tillräckliga.
+Keep in mind ifall du ser duplicates av samma emojis att det är pga fel i hur den renderar hudfärgs versioner av emojis. Jag skippade att outputta alla html koder för det blev bara 1 emoji och sen en hudfärg efter. FULT!
 
 Ha de gött <3
