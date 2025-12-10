@@ -58,10 +58,8 @@ async function randomSearch() {
   output.innerHTML = '';
 
   output.innerHTML = `
-    <div class="emoji">${data.htmlCode[0]}</div>
+    <div class="emoji">${data.htmlCode}</div>
   `;
-  // Hämtar enbart första koden från htmlCode Array '[0]' för att undvika konstiga emojis
-  // hudfärgs emojis renderas inte korrekt på sidan så om jag skriver [0] så visas bara själva emojin.
 
   output.querySelector('.emoji').addEventListener('click', (e) => {
     navigator.clipboard.writeText(e.target.textContent)
