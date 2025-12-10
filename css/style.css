@@ -51,6 +51,7 @@ input{
   height: 100%;
   width: 100%;
   font-size: 18px;
+  font-weight: 500;
 }
 input:focus{
   outline: none; /* Så det inte blir en ful markering när man skriver */
@@ -143,7 +144,7 @@ input:focus{
   gap: 3%; /* Avstånd mellan olika emojis */
 }
 #output p{ /*Styling för placeholder texten innan emoji sök */
-  color: #9a9a9a;
+  color: #8a8a8a;
   font-weight: bold;
 }
 
