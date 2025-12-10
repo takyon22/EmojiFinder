@@ -1,6 +1,6 @@
 body{
   background-color: #1F1F1F;
-  font-family: "Overpass", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: #FFFFFF; /* Vit text som standard */
 }
@@ -51,7 +51,6 @@ input{
   height: 100%;
   width: 100%;
   font-size: 18px;
-  font-weight: 500;
 }
 input:focus{
   outline: none; /* Så det inte blir en ful markering när man skriver */
