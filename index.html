@@ -16,21 +16,24 @@
 
   <link rel="icon" href="https://emojifavicon.com/🤓" /> <!-- Gör det möjligt med matchande emoji för logga som favicon -->
 
+  <!-- Länk för Overpass typsnitt från Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#fa<fafa">
 </head>
 
 <body>
-<div class="main">
-  <div>
-    <img alt="logo" id="logo" src="img/logo.png">
-  </div>
 
+<div class="main">
+
+  <img alt="logo" id="logo" src="img/logo.png">
 
   <div class="search">
     <img id="search" src="img/search.png">
     <input type="search" id="input" placeholder="Sök" autofocus> <!-- autofocus så man kan skriva direkt utan o klicka nåt -->
-
   </div>
 
   <div class="buttons">
@@ -38,19 +41,16 @@
     <p id="button2">Slumpa emoji</p>
   </div>
 
-  <div id="alert">
-
-  </div>
-
+  <div id="alert"></div>
 
   <div id="output">
-    <p>Tryck på en emoji för att kopiera den</p>
+    <p>Tryck på en emoji för att kopiera den</p> <!-- Placeholder text -->
   </div>
 
-
-
 </div>
+
   <script src="js/app.js"></script>
+
 </body>
 
 </html>

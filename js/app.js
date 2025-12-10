@@ -7,7 +7,7 @@ const alert = document.getElementById('alert');
 
 //function för emoji sök
 async function emojiSearch() {
-  
+
   const query = input.value.trim();
   if (!query) return;
 
@@ -25,12 +25,11 @@ async function emojiSearch() {
   data.forEach(item => {
 
     const div = document.createElement("div");
-    div.className = "emojis";
 
     div.innerHTML = `
       <div class="emoji">${item.htmlCode[0]}</div>
     `;
-    // loopar igenom allt i array och levererar items i en div.
+    // loopar igenom allt i array och levererar emojis i enstaka separata div.
     // hämtar enbart första koden från htmlCode Array '[0]' för att undvika konstiga emojis
     // hudfärgs emojis renderas inte korrekt på sidan så om jag skriver [0] så visas bara själva emojin.
 
@@ -70,10 +69,8 @@ async function randomSearch() {
     const temp = document.createElement('span');
     temp.textContent = 'Kopierad!';
     alert.appendChild(temp);
-
-
     setTimeout(() => alert.removeChild(temp), 1000); // tar bort efter 2s
-    
+
     //jag gjorde denna lite annorlunda, utan emojis div t.ex. Det verkar inte behövas om det bara är 1 emoji som genereras
   });
 

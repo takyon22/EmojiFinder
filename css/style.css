@@ -1,13 +1,12 @@
 body{
   background-color: #1F1F1F;
-  font-family: 'Product Sans', sans-serif;
-  color: #FFFFFF;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  color: #FFFFFF; /* Vit text som standard */
 }
-
 
 .main{
   display: flex;
-  margin: 0;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -15,19 +14,18 @@ body{
 }
 
 #logo{
-  margin-top: 75px;
-  display: block;
+  margin-top: 50px;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 25%;
   transition: .3s;
 }
 
-
 .search{
   width: 25%;
   height: 4%;
-  display: flex; /* Fattar inte riktigt detta men de funkar */
+  display: flex;
   background-color: #4D5157;
   margin-top: 50px; /* Avstånd mellan sökruta och looga */
   padding: 12px; /* Hur mycke luft de e mellan kanterna och ikoner */
@@ -37,25 +35,23 @@ body{
 }
 .search:hover{
   width: 27%;
-  transition: .3s;
+  transition: .3s; /* Expanderar lite vid hover för skön effekt */
 }
 
 #search{
   height: 20px;
-  width: 20px;
+  width: 20px; /* Dimensioner för sök ikonen i sökrutan */
 }
 input{
   background-color: #4D5157;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 10px; /* Gör så att input inte blöder in i sökikonen */
   margin: 1%;
   color: white;
-  border: none;
+  border: none; /* Tar bort ful markeringsruta i input */
   display: flex;
   height: 100%;
   width: 100%;
   font-size: 18px;
-  outline: none;
 }
 input:focus{
   outline: none; /* Så det inte blir en ful markering när man skriver */
@@ -65,10 +61,11 @@ input:focus{
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 15px;
-  font-size: 14px;
+  margin-top: 15px; /* Avstånd mellan knappar och sökrutan */
+  font-size: 14px; /* Aningen mindre font size för knapparna */
 }
 
+/* CSS för knappar med animering av storlek vid tryck samt färgändring vid hover */
 #button1{
   width: 80px;
   background-color: #303134;
@@ -140,19 +137,19 @@ input:focus{
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding: 5%;
+  padding: 5%; /* Padding mellan genererade emojis och sök delen av sidan */
+  gap: 2%; /* Avstånd mellan olika emojis */
 }
-#output p{
-  font-size: 16px;
+#output p{ /*Styling för placeholder texten innan emoji sök */
   color: #9a9a9a;
   font-weight: bold;
 }
 
 .emoji{
-  font-size: 75px;
+  font-size: 75px; /* Storlek på emoji. Lyckades inte göra dem skalbara med % */
   transition: 0.3s;
 }
-
+/* Hover och klick effekt för mer interaktiv känsla */
 .emoji:hover {
   transform: scale(1.1);
   cursor: pointer;
@@ -161,25 +158,12 @@ input:focus{
   border: none;
   outline: none;
 }
-
 .emoji:active {
   filter: drop-shadow(0 5px 10px #7cc867);
   transform: scale(0.99);
   transition: 0.1s;
   border: none;
   outline: none;
-}
-
-.name{
-  color: #D6D6D6;
-}
-
-.emojis{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
 }
 
 
@@ -192,4 +176,7 @@ input:focus{
   font-size: 24px;
   filter: drop-shadow(0 5px 15px rgb(0, 0, 0));
   text-align: center;
+  /* Jag ville ha en bakgrund för denna men då blir bakgrunden persistent även när ingen alert visas.
+  Blir tyvärr att den syns dåligt nu om det är många emojis på skärmen.
+   */
 }
