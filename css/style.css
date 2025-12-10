@@ -14,11 +14,11 @@ body{
 }
 
 #logo{
-  margin-top: 50px;
+  margin-top: 50px; /* Avstånd mellan toppen av sidan och logo */
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
+  width: 25%; /* Auto resize utefter webbläsarstorlek. Detta blev inte så bra men bättre än att ha den static */
 }
 
 .search{
