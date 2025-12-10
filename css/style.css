@@ -58,7 +58,7 @@ input{
   outline: none;
 }
 input:focus{
-  outline: none;
+  outline: none; /* Så det inte blir en ful markering när man skriver */
 }
 
 .buttons{
@@ -70,7 +70,7 @@ input:focus{
 }
 
 #button1{
-  width: 75px;
+  width: 80px;
   background-color: #303134;
   padding: 10px;
   border-radius: 7px;
@@ -80,7 +80,7 @@ input:focus{
   transition: .2s;
 }
 #button1:hover{
-  width: 75px;
+  width: 80px;
   background-color: #4b6a2c;
   transition: .2s;
   padding: 10px;
@@ -91,7 +91,7 @@ input:focus{
   cursor: pointer;
 }
 #button1:active{
-  width: 70px;
+  width: 75px;
   background-color: #627c48;
   transition: .1s;
   padding: 10px;
@@ -102,7 +102,7 @@ input:focus{
   cursor: pointer;
 }
 #button2{
-  width: 90px;
+  width: 95px;
   background-color: #303134;
   padding: 10px;
   padding-left: 20px;
@@ -112,7 +112,7 @@ input:focus{
   transition: .2s;
 }
 #button2:hover{
-  width: 90px;
+  width: 95px;
   background-color: #4d6ba5;
   transition: .2s;
   padding: 10px;
@@ -123,7 +123,7 @@ input:focus{
   cursor: pointer;
 }
 #button2:active{
-  width: 85px;
+  width: 90px;
   background-color: #7d8ba8;
   transition: .1s;
   padding: 10px;
@@ -180,18 +180,11 @@ input:focus{
   justify-content: center;
   align-items: center;
   width: 100px;
-  opacity: 0;               /* startar osynlig */
-  transform: scale(0.8);    /* startar lite mindre */
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.emojis.show {
-  opacity: 1;               /* slutar på fullt synlig */
-  transform: scale(1);      /* slutar på normal storlek */
 }
 
 
 #alert{
-  position: fixed;      /* ovanpå sidan */
+  position: fixed;      /* fast position på sidan, inte påverkad av layouting */
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
